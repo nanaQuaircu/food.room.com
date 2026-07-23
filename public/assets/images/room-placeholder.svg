@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" viewBox="0 0 400 260" fill="none">
+  <rect width="400" height="260" fill="#e2e8f0"/>
+  <rect x="48" y="40" width="304" height="180" rx="12" fill="#cbd5e1"/>
+  <path d="M72 200 L120 140 L168 168 L232 108 L328 200 Z" fill="#94a3b8"/>
+  <circle cx="280" cy="88" r="22" fill="#f8fafc" opacity="0.9"/>
+  <text x="200" y="238" text-anchor="middle" fill="#64748b" font-family="system-ui,sans-serif" font-size="14">Room photo</text>
+</svg>

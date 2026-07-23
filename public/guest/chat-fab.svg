@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Open chat">
+  <circle cx="32" cy="32" r="32" fill="#cb8670"/>
+  <path
+    fill="none"
+    stroke="#fff"
+    stroke-width="3.5"
+    stroke-linejoin="round"
+    stroke-linecap="round"
+    d="M20 22.5h24a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H31l-7 7.5V42.5H20a3 3 0 0 1-3-3v-14a3 3 0 0 1 3-3z"
+  />
+</svg>

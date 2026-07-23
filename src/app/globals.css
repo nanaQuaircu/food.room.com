@@ -1,0 +1,120 @@
+@import '../styles/premium.css';
+
+/* Avoid Bootstrap `.toast-container` (`position: absolute`) which hid our notifications */
+.app-toast-stack {
+  position: fixed !important;
+  top: 1rem !important;
+  right: 1rem !important;
+  left: auto !important;
+  bottom: auto !important;
+  z-index: 4000 !important;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: min(100vw - 2rem, 380px);
+  max-width: min(100vw - 2rem, 380px);
+  pointer-events: none;
+}
+
+.app-toast {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.9rem 1rem;
+  border-radius: 0.75rem;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.18);
+  pointer-events: auto;
+  animation: app-toast-slide-in 0.25s ease-out;
+}
+
+@keyframes app-toast-slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.app-toast__icon {
+  font-size: 1.15rem;
+  line-height: 1;
+  margin-top: 0.1rem;
+}
+
+.app-toast__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.app-toast__title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #111827;
+}
+
+.app-toast__message {
+  margin-top: 0.2rem;
+  font-size: 0.82rem;
+  color: #4b5563;
+  line-height: 1.4;
+}
+
+.app-toast__close {
+  border: 0;
+  background: transparent;
+  color: #9ca3af;
+  padding: 0;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.app-toast__close:hover {
+  color: #374151;
+}
+
+.app-toast--success {
+  border-left: 4px solid #16a34a;
+}
+
+.app-toast--success .app-toast__icon {
+  color: #16a34a;
+}
+
+.app-toast--error {
+  border-left: 4px solid #dc2626;
+}
+
+.app-toast--error .app-toast__icon {
+  color: #dc2626;
+}
+
+.app-toast--warning {
+  border-left: 4px solid #d97706;
+}
+
+.app-toast--warning .app-toast__icon {
+  color: #d97706;
+}
+
+.app-toast--info {
+  border-left: 4px solid #2563eb;
+}
+
+.app-toast--info .app-toast__icon {
+  color: #2563eb;
+}
+
+.form-field-error {
+  font-size: 0.8rem;
+  color: #dc2626;
+  margin-top: 0.35rem;
+}
+
+.form-control.is-invalid {
+  border-color: #dc2626;
+}
