@@ -1,0 +1,3 @@
+# Avoid `npm ci` lockfile sync failures on Railway (Nixpacks default).
+[phases.install]
+cmds = ["npm install"]
